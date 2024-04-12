@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $database = new Database();
     $db = $database->getConnexion();
 
-    // On instancie l'objet etudiant
+    // On instancie l'objet etudiant 
     $etudiant = new Etudiant($db);
  
     // On récupère les infos envoyées
