@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
     // On instancie l'objet etudiant
     $etudiant = new Etudiant($db);
-
+ 
     // On récupère les infos envoyées
     $data = json_decode(file_get_contents("php://input"));
     if (!empty($data->nom) && !empty($data->prenom) && !empty($data->age) && !empty($data->niveau_id)) {
