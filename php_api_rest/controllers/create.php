@@ -7,7 +7,7 @@ header("Access-Control-Allow-Methods: POST");
 require_once '../config/Database.php';
 require_once '../models/Etudiant.php';
 
-if ($_SERVER['REQUEST_METHOD'] === "POST") {
+if ($_SERVER['REQUEST_METHOD'] === "POST") { 
     // On instancie la base de données
     $database = new Database();
     $db = $database->getConnexion();
